@@ -7,13 +7,6 @@
 <html>
 	<head>
 		<!-- Anti-flicker snippet (recommended)  -->
-		<style>.async-hide { opacity: 0 !important} </style>
-		<script>
-		(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-		})(window,document.documentElement,'async-hide', 'dataLayer', 4000,
-		{'GTM-MLZS7QN':true});</script>
 		<title>Dimension by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -25,9 +18,15 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-136434150-1', { 'optimize_id': 'GTM-MLZS7QN'});
 		</script>
+		<style>.async-hide { opacity: 0 !important} </style>
+		<script>
+		(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+		})(window,document.documentElement,'async-hide', 'dataLayer', 4000,
+		{'GTM-MLZS7QN':true});</script>
 	</head>
 	<body class="is-preload">
 
